@@ -1,5 +1,5 @@
 '''
-@author: Bi Xiong
+@author: Xiong Bi
 @time: 2024/4/7 22:16
 '''
 
@@ -21,7 +21,7 @@ random_seed = 1
 lr = 0.001
 epochs = 100
 
-'这里是手动设置的batch_size值，感兴趣的朋友可以使用 .view() 方法来自动地计算出batch_size值'
+'手动设置的batch_size值，感兴趣的朋友也可以使用 .view() 方法来自动地计算出batch_size值'
 batch_size = 100
 
 '将分类数设置为10，根据自己的目标任务灵活设置'
@@ -37,7 +37,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 if torch.cuda.is_available():
     torch.backends.cudnn.deterministic = True
 
-'注意，上述两个代码块都是有必要使用的，不存在重复。变量device指定运行代码的设备，确定性模式确保在使用GPU加速训练时每次获得的实验结果相同'
+'注意，上述两个代码块都是有必要使用的，不存在重复。device指定运行代码的设备，确定性模式确保在使用GPU加速训练时每次获得的实验结果相同'
 
 
 '（3）数据集的准备'
